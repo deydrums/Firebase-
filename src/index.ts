@@ -8,9 +8,9 @@ const usuario = {
 
 //Insert in to usuarios
 
-db.collection('usuarios')
-    .add(usuario)
-    .then(docRef =>{
-        console.log(docRef.delete())
-    })
-    .catch(e => console.log('error',e));
+// db.collection('usuarios')
+//     .add(usuario)
+//     .then(docRef =>{
+//         console.log(docRef.delete())
+//     })
+//     .catch(e => console.log('error',e));
