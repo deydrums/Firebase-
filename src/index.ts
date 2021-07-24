@@ -52,5 +52,12 @@ const usuariosRef = db.collection('usuarios');
 //     .onSnapshot(retornaDocumentos);
     
 //promesa
-usuariosRef
-    .get().then(retornaDocumentos);
+// usuariosRef
+//     .get().then(retornaDocumentos);
+
+//CONDICIONES 
+
+// usuariosRef.where('activo','==',true).get().then(retornaDocumentos);
+// usuariosRef.where('salario','>',1800).get().then(retornaDocumentos);
+// usuariosRef.where('salario','>',1800).where('salario','<',2300).get().then(retornaDocumentos);
+usuariosRef.where('salario','>',1800).where('activo','==',true).get().then(retornaDocumentos);
