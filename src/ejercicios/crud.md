@@ -73,3 +73,8 @@ usuariosRef
     .orderBy('nombre')
     .orderBy('salario')
     .get().then(retornaDocumentos);
+
+# LIMIT Y PAGINACION
+
+usuariosRef.limit(1)
+    .get().then(retornaDocumentos);
